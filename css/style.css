@@ -1,12 +1,46 @@
 header {
     background-color: black;
     width: 100%;
-    height: 125px;
+    height: 90px;
     display: flex;
     align-content: center;
 }
 
+.fundo_claro {
+background-color:#F1ECCE;
+padding-top: 5rem;
+padding-bottom: 5rem;
+}
 
+.fundo_escuro {
+  background-image:url("../img/fundo.png");
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.titulo_claro h1{
+
+  font-family: 'Viga', sans-serif;
+  font-size: 36;
+  color:black
+
+}
+
+.titulo_escuro h1{
+
+  font-family: 'Viga', sans-serif;
+  font-size: 36;
+  color: #F1ECCE;
+}
 
 .container_grid{
     width: 70%;
@@ -20,43 +54,209 @@ header {
 }
 
 .midias_sociais{
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
 }
 
-.titulo {
-    margin-top: 50px;
-
-}
-
 .cordel_body {
-    margin-top: 50px;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 26;
+    margin-top: 5rem;
     font-weight: normal;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
 }
+
+.cordel_body h2{
+
+  width: fit-content;
+font-family: 'Patrick Hand', cursive;
+font-size: 24px;}
 
 .cordel_body img{
     width: auto;
-    height: 100%;
+    height:100%;
     align-items: center;
     margin-left: 30px;
-    object-fit: contain;
+    object-fit:contain;
+    box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
 }
 
-h1 {
-    font-family: 'Viga', sans-serif;
-    font-size: 36;
+
+.comentario_section {
+  padding-top: 0rem;
 }
 
-h2 {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 26;
-    font-weight: normal;
+
+.container_comment {
+position: relative;
 }
+
+.container_comment img{
+  width: 80%;
+height: auto;
+display: flex;
+
+}
+
+.text-block {
+  position: absolute;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 55%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.text-block h4{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 24px;
+
+}
+
+.text-block p{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+}
+
+.present_body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+
+.present_photos {
+  width: 35%;
+  height: fit-content;
+  z-index: 22;
+}
+
+.present_photos img{
+  height: auto;
+  width: 152%;
+  left: -100px;
+  position: relative;
+  }
+
+.present_card {
+  border-radius: 10px 0px 10px 0PX;
+  background-color: #c1bd95b0;
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  padding: 20px;
+  padding-left: 40px;
+  width: 60%;
+  height: MIN-content;
+  z-index: 5;
+}
+
+.present_card p{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 22px;
+}
+
+
+.images_anatomy {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+} 
+
+ .anatomy_photo {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  padding-top: 0px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anatomy_photo img{
+  width: 85%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+.about_section {
+  background-image:url("../img/fundo2.png");
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.cordelio_1{
+ width: 3%;
+ height: 11px;
+ position: relative;
+ }
+
+.cordelio_1 img{
+
+  width: 500px;
+  height: AUTO;
+  position: absolute;
+  top: -12rem;
+  display:block;
+  float: left;
+  left: -370px;
+  z-index: 9;
+}
+
+.sobre_card {
+  margin-top: 5rem;
+  border-radius: 10px;
+  position: relative;
+  background-color: #c1bd95b0 ;
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  padding: 35px;
+  width: 100%;
+  z-index: 10;
+}
+
+.sobre_card p{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 22px;
+}
+
+.sobre_card h5{
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+  font-size: 24;
+}
+
+.sobre_card hl{
+  height: fit-content;
+  width: 100%;
+}
+
+.sobre_card button{
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 5px;
+  height: 45px;
+  width: 145px;
+}
+
 
 *,
 *::before,
@@ -66,12 +266,7 @@ h2 {
   box-sizing: border-box;
 }
 
-body {
- 
-  background: #F1ECCE;
-  overflow-x: hidden;
 
-}
 
 
 
@@ -89,7 +284,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-  background: #f45b69;
+  background: #000000;
   padding: 100px 0;
 }
 
@@ -102,6 +297,9 @@ body {
 
 .intro h1 {
   font-size: 2.5rem;
+  font-family: 'Viga', sans-serif;
+  font-size: 36;
+  color:rgb(255, 255, 255)
 }
 
 
@@ -109,7 +307,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: #456990;
+  background: #c1bd95;
   padding: 50px 0;
 }
 
@@ -140,7 +338,10 @@ body {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #f45b69;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 22px;
+  color:white;
+  background: #000000;
 }
 
 .timeline ul li div::before {
@@ -159,7 +360,7 @@ body {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #f45b69 transparent transparent;
+  border-color: transparent #000000 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -169,12 +370,14 @@ body {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #f45b69;
+  border-color: transparent transparent transparent #000000;
 }
 
 time {
   display: block;
   font-size: 1.2rem;
+  font-family: 'Viga', sans-serif;
+  color: white;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -188,7 +391,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #f45b69;
+  background: #000000;
 }
 
 .timeline ul li div {
@@ -302,12 +505,30 @@ time {
   }
 }
 
+.footer {
+  background-image:url("../img/fundo3.png");
+  background-size: cover;
+
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #canvas {
     width: 100%;
     height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
 
 
 
 
+@media (max-width: 1200px) {
+  
+}
